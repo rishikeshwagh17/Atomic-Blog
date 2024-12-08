@@ -14,7 +14,7 @@ function createRandomPost() {
     2. provide value to child component
 */
 
-function App() {
+function AppV1() {
   const [isFakeDark, setIsFakeDark] = useState(false);
 
   // Whenever `isFakeDark` changes, we toggle the `fake-dark-mode` class on the HTML element (see in "Elements" dev tool).
@@ -175,4 +175,4 @@ function Footer() {
   return <footer>&copy; by The Atomic Blog ✌️</footer>;
 }
 
-export default App;
+export default AppV1;

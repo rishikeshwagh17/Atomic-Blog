@@ -52,6 +52,8 @@ function PostProvider({ children }) {
 //custom hook for context value use
 function usePostConext() {
   const context = useContext(PostContext);
+  if (context === undefined)
+    throw new Error("PostContext is used outside the provider of context");
   return context;
 }
 
